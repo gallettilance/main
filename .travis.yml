@@ -3,4 +3,3 @@ android:
   components:
     - build-tools-26.0.2
     - android-26
-    - extra
