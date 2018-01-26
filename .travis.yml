@@ -25,4 +25,4 @@ before_script:
     # Prepare pre-accepted licenses to not be promted at installation
     
 script:
-    - ./gradlew build check
+    - ./ILO/gradlew build check
