@@ -2,6 +2,8 @@
 
 ## General
 
+* Before making a PR, please ensure that while writing code you have not modified section not described in your PR (Example: do not change the indentations, line spacing etc in code that does not concern your PR)
+
 * PR titles should be descriptive and concise. (Example: instead of "LogInActivity fixed bug", write "redirection to SignUpActivity in login function when user does not exist")
 
 * Atomicity of Pull Requests - one feature per PR
