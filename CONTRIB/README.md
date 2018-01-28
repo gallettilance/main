@@ -2,7 +2,7 @@
 
 ## Guidelines
 
-Link coming soon
+[Coding guidelines](Contrib.md) 
 
 ## Good Practice
 
