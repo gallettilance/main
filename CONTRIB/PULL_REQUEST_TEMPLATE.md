@@ -12,6 +12,8 @@
 
 * Please also include relevant motivation and context. List any dependencies that are required for this change.
 
+* Please make sure to include relevant labels to your PR
+
 ## Checklist:
 
 - [ ] My code follows the style guidelines of this project
@@ -20,3 +22,4 @@
 - [ ] I have made corresponding changes to the documentation
 - [ ] My changes generate no new warnings
 - [ ] I have conducted new and old tests successfully
+- [ ] I have included relevant labels
