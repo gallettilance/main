@@ -1,8 +1,12 @@
 # Contributing
 
+## Getting Started
+
+Please review [the basics](BASICS/) to make sure your set up correctly to get started
+
 ## Guidelines
 
-[Coding guidelines](CONTRIBUTING.md) 
+Please review the following [Coding guidelines](CONTRIBUTING.md) before making a Pull Request
 
 ## Good Practice
 
