@@ -2,7 +2,7 @@
 
 ## Guidelines
 
-[Coding guidelines](CONTRIB.md) 
+[Coding guidelines](CONTRIBUTING.md) 
 
 ## Good Practice
 
