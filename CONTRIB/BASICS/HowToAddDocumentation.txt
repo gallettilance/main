@@ -1,0 +1,5 @@
+How to add documentation:
+
+You may add your own documentation by adding txt, pdf, docx, or other files 
+to the appropriate folder and submitting a pull request to Lance. Please make
+all file names clear and all documentation accurate and useful
