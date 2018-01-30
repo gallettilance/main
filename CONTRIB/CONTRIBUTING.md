@@ -1,14 +1,23 @@
 # Coding  Conventions 
+
 In general names like those seen in the examples `name_`, `s_name` , are not used.
+
 ## Package names
+
 Package names are all lowercase, with consecutive words simply concatenated together (no underscores). For example, `com.example.deepspace`, not com.example.deepSpace or com.example.deep_space.
+
 ## Class names
+
 Class names are written in UpperCamelCase
 Class names are typically nouns or noun phrases. For example, `Character` or `ImmutableList`. Interface names may also be nouns or noun phrases (for example, List), but may sometimes be adjectives or adjective phrases instead (for example, Readable).
+
 ## Method names
+
 Method names are written in lowerCamelCase
 Method names are typically verbs or verb phrases. For example, `sendMessage`, `getUser`.
+
 ## Constant names
+
 Constant names use CONSTANT_CASE: all uppercase letters, with each word separated from the next by a single underscore. Constants are static final fields whose contents are deeply immutable and whose methods have no detectable side effects. Examples:
 ```java
 // Constants
@@ -147,3 +156,6 @@ Examples:
 `user_id: ID for UserActivity`
 
 
+# Documentation Guidelines
+
+Please only upload .md or .pdf files as documentation. Pull requests with .docx files as documentation will not be accepted.
