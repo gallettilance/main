@@ -9,5 +9,13 @@ public class LogInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
+
+        //
+        // here is where
+        // you add your checking functions
+        // and move from loginActivity to my profile
+        //
+
     }
+
 }
