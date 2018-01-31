@@ -6,7 +6,7 @@ Please review [the basics](BASICS/) to make sure your set up correctly to get st
 
 ## Guidelines
 
-Please review the following [Coding guidelines](CONTRIBUTING.md) to ensure your coding style matches that of the project. We also recommend you review the [Pull Request Template](PULL_REQUEST_TEMPLATE.md) before making a Pull Request
+Please review the following [Coding guidelines](CONTRIBUTING.md) to ensure your coding style matches that of the project. We also recommend you review the [Pull Request Template](PULL_REQUEST_TEMPLATE.md) before making a Pull Request. Once you have read the above and are ready to get started, go claim an issue and start coding!!
 
 ## Good Practice
 
