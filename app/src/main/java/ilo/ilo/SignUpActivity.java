@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class SignUpActivity extends AppCompatActivity {
-    LogInHelper mForm;
+    SignUpHelper mForm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,7 +15,7 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //populate form with info from layout
-                mForm = new LogInHelper("test@wow.com", "first", "notsafe");
+                mForm = new SignUpHelper("test@wow.com", "first", "notsafe");
                 if(mForm.validateForm()){
                     //TODO Make database call with proper user information, get back authkey and load Viewprofile
                     Intent i = new Intent(SignUpActivity.this, ViewProfileActivity.class);

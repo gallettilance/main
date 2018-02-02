@@ -1,13 +1,13 @@
 package ilo.ilo;
 
 
-public class LogInHelper {
+public class SignUpHelper {
 
     private String mEmail;
     private String mUserName;
     private String mPassword;
 
-    public LogInHelper(String email, String user, String pass){
+    public SignUpHelper(String email, String user, String pass){
         this.mEmail = email;
         this.mPassword = pass;
         this.mUserName = user;
