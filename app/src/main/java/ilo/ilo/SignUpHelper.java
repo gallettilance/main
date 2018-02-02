@@ -6,11 +6,13 @@ public class SignUpHelper {
     private String mEmail;
     private String mUserName;
     private String mPassword;
+    private String mPasswordConfirm;
 
-    public SignUpHelper(String email, String user, String pass){
+    public SignUpHelper(String email, String user, String pass, String confirmPassword){
         this.mEmail = email;
         this.mPassword = pass;
         this.mUserName = user;
+        this.mPasswordConfirm = confirmPassword;
     }
     private boolean isValidEmail(){
         //check for valid email address
@@ -28,8 +30,18 @@ public class SignUpHelper {
         return mPassword.length() > 8;
     }
 
+    private boolean isConfirmed(){
+        //Checking the password entered, and confirmation pass are equal
+        return mPassword.equals(mPasswordConfirm);
+    }
+
     public  boolean validateForm(){
-        return isValidEmail() && isValidPassword() && isValidUserName();
+        return isValidEmail() && isValidPassword() && isValidUserName() && isConfirmed();
+    }
+
+    public String hashPassword(){
+        //TODO Complete hashing of password
+        return "";
     }
 
 }
