@@ -1,6 +1,19 @@
+
+# Application Layout
+The application integrates Gradle, if you don’t understand the file/folder layout I suggest going to the Android Gradle project structure that is defined on the Android Gradle plugin user guide. http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Project-Structure
+
 # Coding  Conventions 
 
 In general names like those seen in the examples `name_`, `s_name` , are not used.
+
+## Exceptions 
+Never ignore exceptions, ever. Your code will eventually throw an error if you do.
+
+## Import Statements
+Fully qualify any needed imports ie import foo.Bar; is good, import foo.*; is bad
+
+## Scope
+Limit the scope of all variables as much as possible. Local variables should be declared at the point they are first used
 
 ## Package names
 
