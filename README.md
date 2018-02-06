@@ -15,6 +15,8 @@ Business &amp; Entrepreneurship Educational App
 
 Coming soon
 
+Rami
+
 ## Contributions
 
 Please review the [Contribution guidelines](https://github.com/galletti94/main/tree/master/CONTRIB) before making Pull Requests.
