@@ -50,8 +50,9 @@ public class SignUpHelper {
     }
 
     public String hashPassword(){
-        //TODO Complete hashing of password
-        return "";
+        //TODO Learn more about hashing
+        String hashedPass = ""+mPassword.hashCode();
+        return hashedPass;
     }
 
 

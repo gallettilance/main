@@ -104,6 +104,10 @@ When possible, keep methods small and focused. If a method exceeds 40 lines or s
 
 ## XML
 
+### Figma
+
+The design was done in figma [here](https://www.figma.com/file/efpCXrR2bp6Tol96n6ExWBYr/ILO). Please refer to it as much as possible and contact [Robin Rhodes](https://github.com/rhodesrm) for getting access and for any design related questions.
+
 ### Resources naming
 Resource IDs and names are written in lowercase_underscore.
 ### ID naming
