@@ -3,20 +3,26 @@ package ilo.ilo;
 
 public class SignUpHelper {
 
+    private String mFirstName;
+    private String mLastName;
     private String mEmail;
     private String mUserName;
     private String mPassword;
     private String mPasswordConfirm;
+    private String mDob;
 
-    public SignUpHelper(String email, String user, String pass, String confirmPassword){
+    public SignUpHelper(String email, String user, String pass, String confirmPassword, String dob, String first, String last){
+        this.mFirstName = first;
+        this.mLastName = last;
         this.mEmail = email;
         this.mPassword = pass;
         this.mUserName = user;
         this.mPasswordConfirm = confirmPassword;
+        this.mDob = dob;
     }
     private boolean isValidEmail(){
         //check for valid email address
-        return mEmail.contains("@") && mEmail.length() > 8;
+        return mEmail.matches("/^([A-Za-z0-9_\\-\\.\\'\\+])+\\@([A-Za-z0-9_\\-\\.])+\\.([A-Za-z]{2,6})$/");
     }
 
 
@@ -35,6 +41,10 @@ public class SignUpHelper {
         return mPassword.equals(mPasswordConfirm);
     }
 
+    private boolean isValidDob(){
+        return false;
+    }
+
     public  boolean validateForm(){
         return isValidEmail() && isValidPassword() && isValidUserName() && isConfirmed();
     }
@@ -44,5 +54,6 @@ public class SignUpHelper {
         String hashedPass = ""+mPassword.hashCode();
         return hashedPass;
     }
+
 
 }

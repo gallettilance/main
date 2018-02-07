@@ -17,9 +17,13 @@ public class LogInHelper {
             Check to make sure the email exist and is a valid email
          */
         boolean inDatabase = false;
-        boolean validEmail = mEmail.contains("@") && mEmail.length() > 8;
+        boolean validEmail = mEmail.matches("/^([A-Za-z0-9_\\-\\.\\'\\+])+\\@([A-Za-z0-9_\\-\\.])+\\.([A-Za-z]{2,6})$/");
 
-        return inDatabase && validEmail;
+        if(validEmail){
+            //TODO - call to make sure it is in database
+            return inDatabase;
+        }
+        return false;
     }
 
     public boolean isValidPassword(){

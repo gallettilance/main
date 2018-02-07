@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class LogInActivity extends AppCompatActivity {
     LogInHelper mAuth;
@@ -20,10 +21,17 @@ public class LogInActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mAuth = new LogInHelper("wow@wow.com", "123");
-                mAuth.isValidEmail();
-                mAuth.isValidPassword();
-                //TODO make call to database to login in user
-                Intent i = new Intent(LogInActivity.this, ViewProfileActivity.class);
+                if(!mAuth.isValidEmail()){
+                    Toast.makeText(getApplicationContext(),"Invalid Email",Toast.LENGTH_SHORT).show();
+                }
+                else if(!mAuth.isValidPassword()){
+                    Toast.makeText(getApplicationContext(),"Invalid Password",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    //TODO make call to database to login in user
+                    Intent i = new Intent(LogInActivity.this, ViewProfileActivity.class);
+                }
+
             }
         });
 
