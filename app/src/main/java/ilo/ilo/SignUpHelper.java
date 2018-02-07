@@ -22,7 +22,7 @@ public class SignUpHelper {
     }
     private boolean isValidEmail(){
         //check for valid email address
-        return mEmail.contains("@") && mEmail.length() > 8;
+        return mEmail.matches("/^([A-Za-z0-9_\\-\\.\\'\\+])+\\@([A-Za-z0-9_\\-\\.])+\\.([A-Za-z]{2,6})$/");
     }
 
 
