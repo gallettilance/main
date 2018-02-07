@@ -18,8 +18,12 @@ public class LogInHelper {
          */
         boolean inDatabase = false;
         boolean validEmail = mEmail.contains("@") && mEmail.length() > 8;
-
-        return inDatabase && validEmail;
+        validEmail = validEmail && mPassword.indexOf("@") < mPassword.lastIndexOf(".");
+        if(validEmail){
+            //TODO - call to make sure it is in database
+            return inDatabase;
+        }
+        return false;
     }
 
     public boolean isValidPassword(){

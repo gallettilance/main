@@ -15,7 +15,7 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //populate form with info from layout
-                mForm = new SignUpHelper("test@wow.com", "first", "notsafe", "ooowrong");
+                mForm = new SignUpHelper("test@wow.com", "first", "notsafe", "ooowrong", "12/31/13", "Bill", "Little");
                 if(mForm.validateForm()){
                     //TODO Make database call with proper user information, get back authkey and load Viewprofile
                     Intent i = new Intent(SignUpActivity.this, ViewProfileActivity.class);
