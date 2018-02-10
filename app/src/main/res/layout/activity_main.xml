@@ -10,10 +10,10 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_main_login"
         android:layout_width="195dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/button2"
+        android:layout_above="@+id/button_main_signup"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
         android:background="@android:color/white"
@@ -23,12 +23,12 @@
         tools:layout_editor_absoluteY="369dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_main_signup"
         android:layout_width="195dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/button3"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
+        android:layout_above="@+id/button_main_browse"
+        android:layout_alignLeft="@+id/button_main_login"
+        android:layout_alignStart="@+id/button_main_login"
         android:layout_marginBottom="27dp"
         android:background="@android:color/white"
         android:text="Sign Up"
@@ -37,12 +37,12 @@
         tools:layout_editor_absoluteY="431dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_main_browse"
         android:layout_width="195dp"
         android:layout_height="40dp"
-        android:layout_alignLeft="@+id/button2"
+        android:layout_alignLeft="@+id/button_main_signup"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button2"
+        android:layout_alignStart="@+id/button_main_signup"
         android:layout_marginBottom="64dp"
         android:background="@android:color/white"
         android:text="Browse"
@@ -54,9 +54,9 @@
         android:id="@+id/imageView8"
         android:layout_width="200dp"
         android:layout_height="250dp"
-        android:layout_above="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:layout_alignRight="@+id/button"
+        android:layout_above="@+id/button_main_login"
+        android:layout_alignEnd="@+id/button_main_login"
+        android:layout_alignRight="@+id/button_main_login"
         android:layout_marginBottom="70dp"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/globecrop" />
