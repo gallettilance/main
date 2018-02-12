@@ -11,6 +11,11 @@
 
 The application integrates Gradle, if you don’t understand the file/folder layout I suggest going to the Android Gradle project structure that is defined on the Android Gradle plugin user guide. http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Project-Structure
 
+## Flow Chart
+
+This is the layout of the application. Activities and code should be modeled after this chart
+![Flow Chart](ILO_App_User_Flow.png)
+
 ## Coding 
 
 In general names like those seen in the examples `name_`, `s_name` , are not used.
