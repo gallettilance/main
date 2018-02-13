@@ -5,7 +5,7 @@ package ilo.ilo;
 public class LogInHelper {
     private String mUsername;
     private String mPassword;
-    private boolean mAutheticated;
+    private boolean mAuthenticated;
 
     public LogInHelper(String user, String password){
         this.mUsername = user;
@@ -13,12 +13,16 @@ public class LogInHelper {
     }
 
     public boolean isValidUser(){
-        /*
-            Check to make sure the email exist and is a valid email
-         */
+        // Check if user input is a valid email
+        // Source:
+        // https://stackoverflow.com/questions/8204680/java-regex-email
+
+        String pattern = "\"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,6}$\"";
+        boolean validUser = mUsername.matches(pattern);
+
+        // Check if email in DB
+
         boolean inDatabase = false;
-        //TODO Come up with check for valid username
-        boolean validUser = mUsername.matches("/^([A-Za-z0-9_\\-\\.\\'\\+])+([A-Za-z0-9_\\-\\.])+\\.([A-Za-z]{2,6})$/");
 
         if(validUser){
             //TODO - call to make sure it is in database
@@ -29,8 +33,12 @@ public class LogInHelper {
 
     public boolean isValidPassword(){
         /*
-            Check to make sure hashed version of the
-         */
+            TODO:
+            1) Check password length
+            2) if length >8 and < 40:
+                Check to make sure hashed version of the
+                password matches the value stored in DB
+        */
         return false;
     }
 
