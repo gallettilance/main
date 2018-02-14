@@ -6,4 +6,61 @@
     android:layout_height="match_parent"
     tools:context="ilo.ilo.BrowseActivity">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:background="#6B91CB"
+        android:text="View Programs"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:text="Search a User"
+        android:textColor="@android:color/white"
+        android:background="#6B91CB"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="Leader Board"
+        android:textColor="@android:color/white"
+        android:background="#6B91CB"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget your password?"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="452dp" />
+
 </android.support.constraint.ConstraintLayout>
