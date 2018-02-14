@@ -4,6 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:background="@color/colorPrimaryDark"
     tools:context="ilo.ilo.SignUpActivity">
+
+    <TextView
+        android:id="@+id/Create an Account"
+        android:layout_width="268dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/roboto"
+        android:text="Create an Account"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Last Name"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Retype Password"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="186dp"
+        android:layout_height="45dp"
+        android:background="@android:color/background_light"
+        android:text="Create"
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="475dp" />
 
 </android.support.constraint.ConstraintLayout>
