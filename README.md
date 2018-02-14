@@ -13,9 +13,7 @@ Business &amp; Entrepreneurship Educational App
 
 ## About
 
-Coming soon 
-
-Natalie
+Coming soon
 
 ## Contributions
 
