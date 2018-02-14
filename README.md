@@ -17,4 +17,4 @@ Coming soon
 
 ## Contributions
 
-Please review the [Contribution guidelines](https://github.com/galletti94/main/tree/master/CONTRIB) before making Pull Requests.
+Please review the [Contribution guidelines](https://github.com/galletti94/main/tree/master/CONTRIB/README.md) before making Pull Requests.
