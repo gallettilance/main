@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ILO</string>
+    <string name="user_name"> Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="password_forgot">I forgot my password</string>
 </resources>

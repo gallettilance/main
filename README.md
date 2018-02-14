@@ -13,7 +13,7 @@ Business &amp; Entrepreneurship Educational App
 
 ## About
 
-Coming soon
+Coming soon 
 
 Natalie
 

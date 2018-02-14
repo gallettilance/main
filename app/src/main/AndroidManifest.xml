@@ -21,7 +21,8 @@
         <activity android:name=".ViewProfileActivity" />
         <activity android:name=".ViewModules" />
         <activity android:name=".ViewTasks" />
-        <activity android:name=".TaskActivity"></activity>
+        <activity android:name=".TaskActivity" />
+        <activity android:name=".BrowseActivity"></activity>
     </application>
 
 </manifest>

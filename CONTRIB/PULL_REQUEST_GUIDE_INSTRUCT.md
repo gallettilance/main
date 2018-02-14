@@ -1,4 +1,27 @@
-# Pull Request Guidelines
+# Pull Request Guidelines & Instructions
+
+## How To create a Pull Request:
+
+1)	Navigate to the [original repository](https://github.com/galletti94/main/pulls).
+
+2)	To the right, click New pull request.
+
+**Optional**
+
+> 3)	On the Compare page, click compare across forks.
+>
+> 4)	Confirm that the base fork is the repository you'd like to merge
+>	changes into. Use the base branch drop-down menu to select the 
+>	branch of the upstream repository you'd like to merge changes into.
+>
+> 5)	Use the head fork drop-down menu to select your fork, then use the 
+>	compare branch drop-down menu to select the branch you made your
+>	changes in.
+
+6)	Type a title and description for your pull request.
+
+7)	Click Create pull request.
+
 
 ## General
 
