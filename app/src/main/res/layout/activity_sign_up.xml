@@ -8,7 +8,6 @@
     tools:background="@color/colorPrimaryDark"
     tools:context="ilo.ilo.SignUpActivity">
 
-<<<<<<< HEAD
     <TextView
         android:id="@+id/Create an Account"
         android:layout_width="268dp"
@@ -105,17 +104,5 @@
         android:textColor="@android:color/background_dark"
         tools:layout_editor_absoluteX="112dp"
         tools:layout_editor_absoluteY="475dp" />
-=======
-    <Button
-        android:id="@+id/button_signup_register"
-        android:layout_width="195dp"
-        android:layout_height="40dp"
-        android:text="Register"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
->>>>>>> c09318d146849c8fa27d45ebc77634155cc083d6
 
 </android.support.constraint.ConstraintLayout>
