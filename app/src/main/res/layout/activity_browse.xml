@@ -12,38 +12,51 @@
         android:layout_height="wrap_content"
         android:text="Explore"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="82dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_browse_view_programs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_browse_view_programs"
         android:layout_width="135dp"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:background="#6B91CB"
         android:text="View Programs"
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_browse_user_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_browse_user_search"
         android:layout_width="136dp"
         android:layout_height="48dp"
+        android:background="#6B91CB"
         android:text="Search a User"
         android:textColor="@android:color/white"
-        android:background="#6B91CB"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="264dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_browse_leader_board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/button_browse_view_programs" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_browse_leader_board"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
+        android:background="#6B91CB"
         android:text="Leader Board"
         android:textColor="@android:color/white"
-        android:background="#6B91CB"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/button_browse_user_search" />
 
     <TextView
         android:id="@+id/textView4"
@@ -51,8 +64,11 @@
         android:layout_height="wrap_content"
         android:text="Don't have an account?"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="426dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/button_browse_leader_board" />
 
     <TextView
         android:id="@+id/textView5"
@@ -60,7 +76,17 @@
         android:layout_height="wrap_content"
         android:text="Forget your password?"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="1dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    tools:background="@color/colorPrimaryDark"
+    android:background="@color/colorILO"
     tools:context="ilo.ilo.SignUpActivity">
 
     <TextView
-        android:id="@+id/Create an Account"
+        android:id="@+id/textCreateAccount"
         android:layout_width="268dp"
         android:layout_height="52dp"
         android:fontFamily="@font/roboto"
@@ -19,8 +19,11 @@
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText2"
@@ -32,8 +35,11 @@
         android:text="First Name"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="130dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateAccount" />
 
     <EditText
         android:id="@+id/editText3"
@@ -44,8 +50,11 @@
         android:text="Last Name"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="183dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <EditText
         android:id="@+id/editText6"
@@ -56,8 +65,11 @@
         android:text="Username"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="239dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <EditText
         android:id="@+id/editText7"
@@ -68,8 +80,11 @@
         android:text="Email"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="293dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
     <EditText
         android:id="@+id/editText8"
@@ -80,8 +95,11 @@
         android:text="Password"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="343dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
     <EditText
         android:id="@+id/editText9"
@@ -92,17 +110,23 @@
         android:text="Retype Password"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="398dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_signup_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText8" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_signup_register"
         android:layout_width="186dp"
         android:layout_height="45dp"
         android:background="@android:color/background_light"
         android:text="Create"
         android:textColor="@android:color/background_dark"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="475dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
 
 </android.support.constraint.ConstraintLayout>
