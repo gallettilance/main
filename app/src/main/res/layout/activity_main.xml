@@ -3,10 +3,12 @@
     android:scaleType="center"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#6B91CB"
+    android:background="@color/colorILO"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     tools:context="ilo.ilo.MainActivity">
+
+    <!-- log in button attributes -->
 
     <Button
         android:id="@+id/button_main_login"
@@ -15,12 +17,13 @@
         android:layout_above="@+id/button_main_signup"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
-        android:background="@android:color/white"
+        android:background="@drawable/curved_button"
         android:text="Log In"
         android:textColor="@android:color/black"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="369dp" />
 
+    <!-- sign up button attributes -->
     <Button
         android:id="@+id/button_main_signup"
         android:layout_width="195dp"
@@ -29,12 +32,13 @@
         android:layout_alignLeft="@+id/button_main_login"
         android:layout_alignStart="@+id/button_main_login"
         android:layout_marginBottom="27dp"
-        android:background="@android:color/white"
+        android:background="@drawable/curved_button"
         android:text="Sign Up"
         android:textColor="@android:color/black"
         tools:layout_editor_absoluteX="115dp"
         tools:layout_editor_absoluteY="431dp" />
 
+    <!-- browse button attributes -->
     <Button
         android:id="@+id/button_main_browse"
         android:layout_width="195dp"
@@ -43,32 +47,36 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/button_main_signup"
         android:layout_marginBottom="64dp"
-        android:background="@android:color/white"
+        android:background="@drawable/curved_button"
         android:text="Browse"
         android:textColor="@android:color/black"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="497dp" />
 
+    <!-- Globe Image needs credit. Source:
+         <a href="https://www.freepik.com/free-photos-vectors/map">Map vector created by Freepik</a> -->
     <ImageView
-        android:id="@+id/imageView_main"
+        android:id="@+id/globe_image_welcome"
         android:layout_width="200dp"
         android:layout_height="250dp"
-        android:layout_above="@+id/button_main_login"
         android:layout_alignEnd="@+id/button_main_login"
+        android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/button_main_login"
-        android:layout_marginBottom="70dp"
+        android:layout_marginTop="20dp"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/globecrop" />
 
+    <!-- inBusiness text -->
     <TextView
-        android:id="@+id/textView_main"
+        android:id="@+id/text_inBusiness"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView_main"
+        android:layout_alignTop="@+id/globe_image_welcome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="99dp"
         android:text="inBusiness"
         android:textColor="#000000"
         android:textSize="20sp" />
+
 
 </RelativeLayout>

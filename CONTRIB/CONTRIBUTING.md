@@ -5,11 +5,17 @@
  * [Application Structure](#structure)
  * [Coding Conventions](#coding)
  * [XML Conventions](#xml) (for designers)
+ * [API Guidelines](#database)
  * [Documention Guidelines](#documentation)
 
 ## Structure
 
 The application integrates Gradle, if you don’t understand the file/folder layout I suggest going to the Android Gradle project structure that is defined on the Android Gradle plugin user guide. http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Project-Structure
+
+## Flow Chart
+
+This is the layout of the application. Activities and code should be modeled after this chart
+![Flow Chart](ILO_App_User_Flow.png)
 
 ## Coding 
 
@@ -171,6 +177,101 @@ The `<WHAT>` part for Strings is irrelevant. So either we use `<WHERE>`to indica
 Examples:
 `main_title: title of MainActivity`
 `user_id: ID for UserActivity`
+
+
+## Database
+
+For testing purposes we have implemented a temporary database hosted on Heroku. All information about the database will be provided below until we create a more robust API to be deployed with the beta version of the app.
+
+### API url
+
+The database is hosted on Heroku at [https://gai-database.herokuapp.com/](https://gai-database.herokuapp.com/). To interact with a specific table please append the table name to the url. The available tables are:
+
+* users
+* modules
+* tasks
+* badges
+* user_progress
+* user_badges
+* user_points
+
+For example to view all the modules, please visit [https://gai-database.herokuapp.com/modules](https://gai-database.herokuapp.com/modules).
+
+### Table attributes
+
+When obtaining the data via a pull request in json format you can extract the appropriate fields by attribute name. Here is a list of all the tables and the name of the attributes within them.
+
+#### User Table
+
+|       Column       |           Type           |       Modifiers       |
+| ------------------ | ------------------------ | --------------------  |
+| user_id            | integer                  | not null Primary Key  |
+| user_first_name    | character varying(50)    | not null |
+| user_last_name     | character varying(50)    | not null |
+| user_email         | character varying(50)    | not null |
+| user_password      | character varying(128)   | not null |
+| user_year_birth    | integer                  | not null |
+| user_date_created  | timestamp with time zone | not null |
+| user_date_modified | timestamp with time zone | not null |
+
+#### Module Table
+
+|        Column        |           Type           |       Modifiers        |
+| -------------------- | ------------------------ | ---------------------- |
+| module_id            | integer                  | not null Primary Key |
+| module_name          | character varying(50)    | not null |
+| module_date_created  | timestamp with time zone | not null |
+| module_date_modified | timestamp with time zone | not null |
+| module_num_tasks     | integer                  | not null |
+
+#### Task Table
+
+|       Column       |           Type           |       Modifiers        |                    
+| ------------------ | ------------------------ | ---------------------- |
+| task_id            | integer                  | not null Primary Key |
+| task_name          | character varying(50)    | not null |
+| task_date_created  | timestamp with time zone | not null |
+| task_date_modified | timestamp with time zone | not null |
+| task_type          | character varying(25)    | not null |
+| task_timer         | integer                  | not null |
+| task_statement     | text                     | not null |
+| task_module_id     | integer                  | not null |
+
+#### Badge Table
+
+|      Column       |  Type   |       Modifiers         |
+|-------------------|---------|------------------------ |
+| badge_id          | integer | not null Primary Key |
+| badge_description | text    | not null |
+| badge_points      | integer | not null |
+
+#### User_Progress Table
+
+|           Column           |  Type   |      Modifiers         |
+|----------------------------|---------|----------------------- |
+| id                         | integer | not null Primary Key |
+| user_progress_module_id_id | integer | not null |
+| user_progress_task_id_id   | integer | not null |
+| user_progress_user_id_id   | integer | not null |
+
+#### User_Badges Table
+
+|         Column          |  Type   |      Modifiers        |
+|-------------------------|---------|---------------------- |
+| id                      | integer | not null Primary Key |
+| user_badges_badge_id_id | integer | not null |
+| user_badges_user_id_id  | integer | not null |
+
+#### User_Points Table
+
+|         Column         |  Type   |      Modifiers          |
+|------------------------|---------|------------------------ |
+| id                     | integer | not null Primary Key |
+| user_points            | integer | not null |
+| user_points_user_id_id | integer | not null |
+
+
+**More Tables to come**
 
 
 ## Documentation

@@ -3,7 +3,7 @@ package ilo.ilo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ViewModules extends AppCompatActivity {
+public class ViewModulesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
