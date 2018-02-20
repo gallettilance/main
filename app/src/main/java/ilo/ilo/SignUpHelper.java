@@ -73,7 +73,7 @@ public class SignUpHelper {
         catch(NumberFormatException ex){
             return false;
         }
-
+        //HACK: need to change 2050 to current year
         boolean validDob = numDob > 1900 && numDob < 2050;
         return validDob;
     }
