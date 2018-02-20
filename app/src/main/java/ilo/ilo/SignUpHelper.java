@@ -72,11 +72,15 @@ public class SignUpHelper {
     }
 
     private boolean isValidDob(){
+
         //attempts to create a Date object representing the date of birth
+        Date after = Date(1900, 1, 1);
         try {
             //if the input is a valid date, make sure it comes before current time
             Date dateOfBirth = mSdf.parse(mDob);
-            return dateOfBirth.before(Calendar.getInstance().getTime());
+            boolean beforeDob = dateOfBirth.before(Calendar.getInstance().getTime());
+            boolean afterDob = dateofBirth.after(after);
+            return beforeDob && afterDob;
         }catch(ParseException e){
             //else say it's invalid
             return false;
