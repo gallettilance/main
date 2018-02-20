@@ -65,7 +65,17 @@ public class SignUpHelper {
     }
 
     private boolean isValidDob(){
-        return false;
+        //check if the date of birth contains any non-numerical characters
+        int numDob;
+        try{
+            numDob = Integer.parseInt(mDob);
+        }
+        catch(NumberFormatException ex){
+            return false;
+        }
+        //HACK: need to change 2050 to current year
+        boolean validDob = numDob > 1900 && numDob < 2050;
+        return validDob;
     }
 
     public  boolean isValidateForm(){
