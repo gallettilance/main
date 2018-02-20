@@ -22,7 +22,8 @@
         app:layout_constraintBottom_toTopOf="@+id/edit_signup_first"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <EditText
         android:id="@+id/edit_signup_first"
@@ -44,12 +45,12 @@
         android:id="@+id/edit_signup_last"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="Last Name"
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_signup_username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,16 +60,18 @@
         android:id="@+id/edit_signup_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Username"
+        android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/edit_signup_email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_signup_last" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_signup_date"
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <EditText
         android:id="@+id/edit_signup_email"
@@ -132,16 +135,14 @@
         android:id="@+id/edit_signup_date"
         android:layout_width="167dp"
         android:layout_height="42dp"
-        android:hint="Date of Birth"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:textSize="14sp"
+        android:hint="Date of Birth (dd/mm/yyyy)"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/edit_signup_username"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_signup_last"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_signup_last" />
 
 </android.support.constraint.ConstraintLayout>

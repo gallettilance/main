@@ -1,6 +1,12 @@
 package ilo.ilo;
 
 
+import java.lang.reflect.Array;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class SignUpHelper {
 
     private String mFirstName;
@@ -10,6 +16,7 @@ public class SignUpHelper {
     private String mPassword;
     private String mPasswordConfirm;
     private String mDob;
+    private SimpleDateFormat mSdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public SignUpHelper(String email, String user, String pass, String confirmPassword, String dob, String first, String last){
         this.mFirstName = first;
@@ -65,17 +72,19 @@ public class SignUpHelper {
     }
 
     private boolean isValidDob(){
-        //check if the date of birth contains any non-numerical characters
-        int numDob;
-        try{
-            numDob = Integer.parseInt(mDob);
-        }
-        catch(NumberFormatException ex){
+
+        //attempts to create a Date object representing the date of birth
+        Date after = Date(1900, 1, 1);
+        try {
+            //if the input is a valid date, make sure it comes before current time
+            Date dateOfBirth = mSdf.parse(mDob);
+            boolean beforeDob = dateOfBirth.before(Calendar.getInstance().getTime());
+            boolean afterDob = dateofBirth.after(after);
+            return beforeDob && afterDob;
+        }catch(ParseException e){
+            //else say it's invalid
             return false;
         }
-        //HACK: need to change 2050 to current year
-        boolean validDob = numDob > 1900 && numDob < 2050;
-        return validDob;
     }
 
     public  boolean isValidateForm(){
