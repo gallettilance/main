@@ -1,6 +1,12 @@
 package ilo.ilo;
 
 
+import java.lang.reflect.Array;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class SignUpHelper {
 
     private String mFirstName;
@@ -10,6 +16,7 @@ public class SignUpHelper {
     private String mPassword;
     private String mPasswordConfirm;
     private String mDob;
+    private SimpleDateFormat mSdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public SignUpHelper(String email, String user, String pass, String confirmPassword, String dob, String first, String last){
         this.mFirstName = first;
@@ -65,7 +72,15 @@ public class SignUpHelper {
     }
 
     private boolean isValidDob(){
-        return false;
+        //attempts to create a Date object representing the date of birth
+        try {
+            //if the input is a valid date, make sure it comes before current time
+            Date dateOfBirth = mSdf.parse(mDob);
+            return dateOfBirth.before(Calendar.getInstance().getTime());
+        }catch(ParseException e){
+            //else say it's invalid
+            return false;
+        }
     }
 
     public  boolean isValidateForm(){
