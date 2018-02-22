@@ -19,10 +19,12 @@
         <activity android:name=".LogInActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ViewProfileActivity" />
-        <activity android:name=".ViewModules" />
         <activity android:name=".ViewTasks" />
         <activity android:name=".TaskActivity" />
-        <activity android:name=".BrowseActivity"></activity>
+        <activity android:name=".BrowseActivity" />
+        <activity android:name=".ViewModulesActivity" />
+        <activity android:name=".UserSearchActivity" />
+        <activity android:name=".LeaderBoardActivity"></activity>
     </application>
 
 </manifest>
