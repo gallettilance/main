@@ -6,6 +6,11 @@ import android.util.Log;
 
 import org.json.JSONObject;
 import javax.net.ssl.HttpsURLConnection;
+
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -31,16 +36,15 @@ public class HttpPOSTRequest extends AsyncTask<String, Void, String> {
         JSONObject myjson = new JSONObject();
 
         try {
+
             myjson.put("user_first_name", firstName);
             myjson.put("user_last_name", lastName);
             myjson.put("user_email", email);
             myjson.put("user_password", password);
             myjson.put("user_year_birth", yearOfBirth);
-            Log.e("MY PARAMETERS", myjson.toString());
 
-            URL myUrl = new URL(stringUrl+getPostDataString(myjson));
-            HttpsURLConnection connection =(HttpsURLConnection)
-                    myUrl.openConnection();
+            URL url = new URL(stringUrl+getPostDataString(myjson));
+            HttpsURLConnection connection =(HttpsURLConnection) url.openConnection();
 
             connection.setRequestMethod(REQUEST_METHOD);
             connection.setReadTimeout(READ_TIMEOUT);
@@ -49,10 +53,17 @@ public class HttpPOSTRequest extends AsyncTask<String, Void, String> {
             connection.setRequestProperty("Accept", "application/json");
             connection.setDoOutput(true);
             connection.setDoInput(true);
-            connection.connect();
 
-            BufferedReader in = new BufferedReader(
-                    new InputStreamReader(connection.getInputStream()));
+            String body = myjson.toString();
+            OutputStream outputStream = new BufferedOutputStream(connection.getOutputStream());
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(outputStream, "utf-8"));
+            writer.write(body);
+            writer.flush();
+            writer.close();
+            outputStream.close();
+
+            connection.connect();
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String inputLine;
             StringBuffer response = new StringBuffer();
 
@@ -60,10 +71,6 @@ public class HttpPOSTRequest extends AsyncTask<String, Void, String> {
                 response.append(inputLine);
             }
             in.close();
-
-            Log.d("ResponseCode", Integer.toString(connection.getResponseCode()));
-            Log.d("ResponseMessage", connection.getResponseMessage());
-            Log.d("Response", response.toString());
 
             connection.disconnect();
             return response.toString();
@@ -96,7 +103,6 @@ public class HttpPOSTRequest extends AsyncTask<String, Void, String> {
             result.append(value.toString());
         }
 
-        Log.d("result.toString()", result.toString());
         return result.toString();
     }
 

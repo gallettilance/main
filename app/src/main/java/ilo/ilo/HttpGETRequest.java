@@ -32,10 +32,12 @@ public class HttpGETRequest extends AsyncTask<String, Void, String>{
             reader.close();
             streamReader.close();
             result = stringBuilder.toString();
+            con.disconnect();
+            return result;
         } catch(Exception e) {
-           result = null;
+          return  "Error "+ e.getMessage();
         }
-        return result;
+
     }
     protected void onPostExecute(String result){
         super.onPostExecute(result);
