@@ -6,6 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.lang.Exception;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import org.json.JSONObject;
 
@@ -16,11 +17,10 @@ public class HttpGETRequest extends AsyncTask<String, Void, String>{
 
         String stringUrl = params[0];
         String inputLine;
-        JSONObject json;
-        String result = "";
+        String result;
         try {
             URL url = new URL(stringUrl);
-            HttpURLConnection con = (HttpURLConnection)url.openConnection();;
+            HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("GET");
             con.connect();
             InputStreamReader streamReader = new InputStreamReader(con.getInputStream());
@@ -32,9 +32,8 @@ public class HttpGETRequest extends AsyncTask<String, Void, String>{
             reader.close();
             streamReader.close();
             result = stringBuilder.toString();
-           // json = JSONReader.readJsonFromUrl(stringUrl);
         } catch(Exception e) {
-            result = null;
+           result = null;
         }
         return result;
     }
