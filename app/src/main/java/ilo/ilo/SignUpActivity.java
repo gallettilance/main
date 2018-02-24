@@ -27,7 +27,7 @@ public class SignUpActivity extends AppCompatActivity {
         mPassword = findViewById(R.id.edit_signup_password);
         mConfirmPassword = findViewById(R.id.edit_signup_confirm);
         mDateOfBirth = findViewById(R.id.edit_signup_date);
-
+        new HttpPOSTRequest().execute("https://gai-database.herokuapp.com/users/", "Jooe", "Leo", "email@test.com", "1234","12311998");
         findViewById(R.id.button_signup_register).setOnClickListener(new View.OnClickListener() {
 
             @Override
