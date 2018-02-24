@@ -15,7 +15,6 @@ public class LogInActivity extends AppCompatActivity {
     LogInHelper mAuth;
     EditText mUsername;
     EditText mPassword;
-    HttpGETRequest test = new HttpGETRequest();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

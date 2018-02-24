@@ -1,11 +1,13 @@
 package ilo.ilo;
 
 
+import java.util.concurrent.ExecutionException;
 
 public class LogInHelper {
     private String mUsername;
     private String mPassword;
     private boolean mAuthenticated;
+    private String result;
 
     public LogInHelper(String user, String password){
         this.mUsername = user;
@@ -19,11 +21,10 @@ public class LogInHelper {
 
         String pattern = "\"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,6}$\"";
         boolean validUser = mUsername.matches(pattern);
-
         // Check if email in DB
 
         boolean inDatabase = false;
-
+       // result = new HttpGETRequest().execute("https://gai-database.herokuapp.com/users/").get();
         if(validUser){
             //TODO - call to make sure it is in database
             return inDatabase;
