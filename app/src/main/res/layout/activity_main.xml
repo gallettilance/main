@@ -9,6 +9,7 @@
     tools:context="ilo.ilo.MainActivity">
 
     <!-- log in button attributes -->
+
     <Button
         android:id="@+id/button_main_login"
         android:layout_width="195dp"
@@ -61,7 +62,8 @@
         android:layout_above="@+id/button_main_login"
         android:layout_alignEnd="@+id/button_main_login"
         android:layout_alignRight="@+id/button_main_login"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="68dp"
+        android:contentDescription="globe icon"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/globecrop" />
 
