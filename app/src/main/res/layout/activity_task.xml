@@ -6,4 +6,186 @@
     android:layout_height="match_parent"
     tools:context="ilo.ilo.TaskActivity">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock"
+        tools:layout_editor_absoluteX="333dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock"
+        tools:layout_editor_absoluteX="333dp"
+        tools:layout_editor_absoluteY="349dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock"
+        tools:layout_editor_absoluteX="333dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40 points"
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40 points"
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40 points"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youare 12 points away from level 6!"
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="349dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Business Module"
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="191dp"
+        android:layout_height="23dp"
+        android:text="Better understand how to..."
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="194dp"
+        android:layout_height="69dp"
+        android:text="Better understand how to go about communicating and reaching agreements in the workplace."
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="371dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="194dp"
+        android:layout_height="69dp"
+        android:text="Better understand how to go about communicating and reaching agreements in the workplace."
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="192dp"
+        android:layout_height="69dp"
+        android:text="Better understand how to go about communicating and reaching agreements in the workplace."
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Courses"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="26dp" />
+
 </android.support.constraint.ConstraintLayout>
