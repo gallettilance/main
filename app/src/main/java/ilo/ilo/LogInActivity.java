@@ -3,15 +3,19 @@ package ilo.ilo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.concurrent.ExecutionException;
 
 public class LogInActivity extends AppCompatActivity {
 
     LogInHelper mAuth;
     EditText mUsername;
     EditText mPassword;
+    HttpGETRequest test = new HttpGETRequest();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
