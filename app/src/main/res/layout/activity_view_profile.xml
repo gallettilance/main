@@ -127,14 +127,13 @@
     <!-- Dreamboard accomplishment yellow title background  -->
     <View
         android:id="@+id/shape_yellow_rectangle"
-        android:layout_width="300dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="302dp"
+        android:layout_height="35dp"
         android:background="@drawable/yellow_rectangle"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity_view_profile_dreamboard_rectangle_3" />
+        tools:layout_editor_absoluteY="418dp" />
 
     <!-- Profile picture circle  -->
     <View
