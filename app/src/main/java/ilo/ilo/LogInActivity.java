@@ -24,9 +24,6 @@ public class LogInActivity extends AppCompatActivity {
         mUsername = findViewById(R.id.edit_login_username);
         mPassword = findViewById(R.id.edit_login_password);
 
-        // here is where
-        // you add your checking functions
-        // and move from loginActivity to my profile
 
         findViewById(R.id.button_login_login).setOnClickListener(new View.OnClickListener() {
 
@@ -35,18 +32,11 @@ public class LogInActivity extends AppCompatActivity {
 
                 mAuth = new LogInHelper(mUsername.getText().toString(), mPassword.getText().toString());
 
-                if(!mAuth.isValidUser()){
-                    Toast.makeText(getApplicationContext(),"User does not exist",Toast.LENGTH_SHORT).show();
-                }
-
-                else if(!mAuth.isValidPassword()){
-
-                    Toast.makeText(getApplicationContext(),"Invalid Password",Toast.LENGTH_SHORT).show();
-
-                } else{
-
-                    //TODO make call to database to login in user
+                if(mAuth.isAuthenticated()){
                     Intent i = new Intent(LogInActivity.this, ViewProfileActivity.class);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Invalid username or password",Toast.LENGTH_SHORT).show();
 
                 }
             }

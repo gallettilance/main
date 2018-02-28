@@ -12,24 +12,20 @@ public class LogInHelper {
     public LogInHelper(String user, String password){
         this.mUsername = user;
         this.mPassword = password;
+        try {
+            result = new HttpGETRequest().execute("").get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
     }
 
     public boolean isValidUser(){
-        // Check if user input is a valid email
-        // Source:
-        // https://stackoverflow.com/questions/8204680/java-regex-email
 
-        String pattern = "\"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,6}$\"";
-        boolean validUser = mUsername.matches(pattern);
-        // Check if email in DB
+        String pattern = "\"^[A-Z0-9._%+-]$\"";
 
-        boolean inDatabase = false;
-       // result = new HttpGETRequest().execute("https://gai-database.herokuapp.com/users/").get();
-        if(validUser){
-            //TODO - call to make sure it is in database
-            return inDatabase;
-        }
-        return false;
+        return mUsername.matches(pattern);
     }
 
     public boolean isValidPassword(){
@@ -40,10 +36,13 @@ public class LogInHelper {
                 Check to make sure hashed version of the
                 password matches the value stored in DB
         */
-        return false;
+
+        return mPassword.length() > 8 && mPassword.length() < 40;
     }
 
-    public void authenticate(){
+    public boolean isAuthenticated(){
+        //TODO: API to get password and compare
 
+        return mAuthenticated && isValidPassword() && isValidUser();
     }
 }

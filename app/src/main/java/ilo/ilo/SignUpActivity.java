@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.concurrent.ExecutionException;
+
 public class SignUpActivity extends AppCompatActivity {
 
     SignUpHelper mForm;
@@ -27,19 +29,16 @@ public class SignUpActivity extends AppCompatActivity {
         mPassword = findViewById(R.id.edit_signup_password);
         mConfirmPassword = findViewById(R.id.edit_signup_confirm);
         mDateOfBirth = findViewById(R.id.edit_signup_date);
-        new HttpPOSTRequest().execute("https://gai-database.herokuapp.com/users/", "Jooe", "Leo", "email@test.com", "1234","12311998");
         findViewById(R.id.button_signup_register).setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
 
-                //TODO: get input text from form
                 mForm = new SignUpHelper(mEmail.getText().toString(), mUsername.getText().toString(), mPassword.getText().toString(),
                                         mConfirmPassword.getText().toString(), mDateOfBirth.getText().toString(), mFirstName.getText().toString(), mLastName.getText().toString());
 
-                if(mForm.isValidateForm()){
+                if(mForm.register()){
 
-                    //TODO Make database call with proper user information, get back authkey and load Viewprofile
                     Intent i = new Intent(SignUpActivity.this, ViewProfileActivity.class);
                     startActivity(i);
 
