@@ -56,10 +56,11 @@
         android:layout_height="0dp"
         android:text="Goal 1:"
         android:textColor="#000000"
-        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="268dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Dreamboard goal 2 box  -->
     <View
@@ -83,10 +84,11 @@
         android:layout_height="0dp"
         android:text="Goal 2:"
         android:textColor="#000000"
-        app:layout_constraintHorizontal_bias="0.224"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="320dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView_goal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_goal1" />
 
 
     <!-- Dreamboard goal 3 box  -->
@@ -95,8 +97,11 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:background="@drawable/dreamboard_text_rectangle"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="364dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Dreamboard goal 3 text -->
     <TextView
@@ -105,10 +110,11 @@
         android:layout_height="0dp"
         android:text="Goal 3:"
         android:textColor="#000000"
-        app:layout_constraintHorizontal_bias="0.224"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="372dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView_goal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_goal1" />
 
     <!-- Dreamboard accomplishment box  -->
     <View
@@ -130,10 +136,11 @@
         android:layout_width="302dp"
         android:layout_height="35dp"
         android:background="@drawable/yellow_rectangle"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="418dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Profile picture circle  -->
     <View
@@ -151,13 +158,13 @@
         android:id="@+id/imageView_menu_bar"
         android:layout_width="57dp"
         android:layout_height="52dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:contentDescription="menu bar (white)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu_icon_white"
-        android:layout_marginLeft="15dp" />
+        app:srcCompat="@drawable/menu_icon_white" />
 
     <TextView
         android:id="@+id/textView_accomplishments"
@@ -165,10 +172,11 @@
         android:layout_height="20dp"
         android:text="Accomplishments"
         android:textColor="#000000"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="423dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_full_name"
@@ -186,9 +194,13 @@
         android:id="@+id/imageView_badge_icon"
         android:layout_width="87dp"
         android:layout_height="96dp"
-        app:srcCompat="@drawable/badge2"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="99dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208"
+        app:srcCompat="@drawable/badge2" />
 
 
     <!-- Progress bar (at 25%)  -->
@@ -216,16 +228,45 @@
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="280dp" />
+        app:layout_constraintEnd_toStartOf="@+id/profile_rectangle"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toEndOf="@+id/shape_yellow_rectangle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <!-- Edit icon -->
     <ImageView
         android:id="@+id/image_view_edit_icon"
         android:layout_width="26dp"
         android:layout_height="30dp"
-        app:srcCompat="@drawable/edit_icon"
-        tools:layout_editor_absoluteX="355dp"
-        tools:layout_editor_absoluteY="98dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182"
+        app:srcCompat="@drawable/edit_icon" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 
 
 </android.support.constraint.ConstraintLayout>

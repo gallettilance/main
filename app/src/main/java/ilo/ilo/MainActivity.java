@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
         // on click listener to login button
         // takes you to login form
-
         findViewById(R.id.button_main_login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
