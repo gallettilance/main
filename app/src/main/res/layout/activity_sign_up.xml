@@ -21,8 +21,11 @@
         android:textSize="24sp"
         android:textStyle="italic"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="65dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
 
 
     <EditText
@@ -35,8 +38,12 @@
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="138dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
 
     <EditText
         android:id="@+id/edit_signup_last"
@@ -47,8 +54,12 @@
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="191dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
 
     <EditText
         android:id="@+id/edit_signup_username"
@@ -59,8 +70,12 @@
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="298dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
 
     <EditText
         android:id="@+id/edit_signup_email"
@@ -71,8 +86,12 @@
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
 
     <EditText
         android:id="@+id/edit_signup_password"
@@ -83,8 +102,12 @@
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
 
     <EditText
         android:id="@+id/edit_signup_confirm"
@@ -95,8 +118,12 @@
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="465dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886" />
 
 
     <EditText
@@ -107,8 +134,12 @@
         android:hint="Date of Birth (dd/mm/yyyy)"
         android:inputType="date"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="245dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
 
     <Button
         android:id="@+id/button_signup_register"
@@ -116,7 +147,11 @@
         android:layout_height="45dp"
         android:background="@drawable/curved_button"
         android:text="Create"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="537dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
 
 </android.support.constraint.ConstraintLayout>
