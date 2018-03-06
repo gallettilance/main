@@ -4,83 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ilo.ilo.BrowseActivity">
+    tools:context="ilo.ilo.BrowseActivity"
+    tools:layout_editor_absoluteY="25dp">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView_browse_explore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Explore"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/button_browse_view_programs"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
 
     <Button
         android:id="@+id/button_browse_view_programs"
-        android:layout_width="135dp"
-        android:layout_height="44dp"
-        android:background="#6B91CB"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curved_button_ilo_color"
         android:text="View Programs"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button_browse_user_search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476" />
 
     <Button
         android:id="@+id/button_browse_user_search"
-        android:layout_width="136dp"
-        android:layout_height="48dp"
-        android:background="#6B91CB"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curved_button_ilo_color"
         android:text="Search a User"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button_browse_leader_board"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/button_browse_view_programs" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
 
     <Button
         android:id="@+id/button_browse_leader_board"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:background="#6B91CB"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curved_button_ilo_color"
         android:text="Leader Board"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/button_browse_user_search" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView_browse_no_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't have an account?"
+        android:textColor="@color/colorILO"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/button_browse_leader_board" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView_browse_forgot_password"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:text="Forget your password?"
+        android:textColor="@color/colorILO"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_browse_no_account" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
