@@ -254,7 +254,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/determinateBar"
         app:layout_constraintTop_toBottomOf="@+id/shape_yellow_rectangle"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginLeft="8dp" />
 
     <!-- Edit icon -->
     <ImageView
