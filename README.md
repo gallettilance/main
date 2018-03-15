@@ -18,3 +18,7 @@ Coming soon
 ## Contributions
 
 Please review the [Contribution guidelines](https://github.com/galletti94/main/tree/master/CONTRIB/README.md) before making Pull Requests.
+
+Please review the video on [how to make a pull request](https://www.youtube.com/watch?time_continue=8&v=i8zlyFZZmZE):
+
+[![Git Instructions](https://i.imgur.com/nPAA92l.jpg)](https://www.youtube.com/watch?time_continue=8&v=i8zlyFZZmZE "Git Instructions")
