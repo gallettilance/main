@@ -76,12 +76,12 @@
         android:background="@drawable/dreamboard_text_rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/activity_view_profile_dreamboard_rectangle_3"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/activity_view_profile_dreamboard_rectangle_3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.500" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <!-- Dreamboard goal 2 text -->
     <TextView
@@ -104,24 +104,30 @@
         android:id="@+id/activity_view_profile_dreamboard_rectangle_3"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="11dp"
         android:background="@drawable/dreamboard_text_rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/shape_yellow_rectangle"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_view_profile_dreamboard_rectangle_2" />
 
     <!-- Dreamboard goal 3 text -->
     <TextView
         android:id="@+id/textView_goal3"
         android:layout_width="122dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Goal 3:"
         android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_view_profile_dreamboard_rectangle_3"
         app:layout_constraintEnd_toEndOf="@+id/activity_view_profile_dreamboard_rectangle_3"
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="@+id/activity_view_profile_dreamboard_rectangle_3"
-        tools:layout_editor_absoluteY="371dp" />
+        app:layout_constraintTop_toTopOf="@+id/activity_view_profile_dreamboard_rectangle_3" />
 
     <!-- Dreamboard accomplishment box  -->
     <View
@@ -239,6 +245,7 @@
         android:layout_height="27dp"
         android:layout_marginBottom="36dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Level 4"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -246,7 +253,7 @@
         app:layout_constraintEnd_toEndOf="@+id/activity_view_profile_dreamboard_accomplishments_box"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/determinateBar"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shape_yellow_rectangle"
         app:layout_constraintVertical_bias="1.0" />
 
     <!-- Edit icon -->

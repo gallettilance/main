@@ -84,7 +84,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.513" />
 
     <EditText
         android:id="@+id/edit_signup_email"
@@ -146,9 +146,9 @@
         android:layout_width="167dp"
         android:layout_height="42dp"
         android:ems="10"
-        android:hint="Date of Birth (dd/mm/yyyy)"
+        android:hint="Birthday (dd/mm/yyyy)"
         android:inputType="date"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
