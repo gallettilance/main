@@ -12,53 +12,64 @@
         android:id="@+id/edit_login_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:layout_marginTop="73dp"
         android:ems="10"
         android:hint="@string/user_name"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edit_login_password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="237dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_login_welcome_back" />
 
     <EditText
         android:id="@+id/edit_login_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:layout_marginTop="43dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/button_login_login"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="325dp" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_login_username" />
 
     <Button
         android:id="@+id/button_login_login"
         android:layout_width="195dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="198dp"
+        android:layout_marginTop="74dp"
         android:background="@drawable/curved_button"
         android:text="@string/log_in"
+        app:layout_constraintBottom_toTopOf="@+id/textView_forgot_password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="444dp" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_login_password" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
         android:text="I forgot my password!"
         android:textColor="#FFFFFFFF"
         android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="518dp" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/textView_login_welcome_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
         android:text="Welcome Back!"
         android:textColor="#ffffff"
         android:textSize="25dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
