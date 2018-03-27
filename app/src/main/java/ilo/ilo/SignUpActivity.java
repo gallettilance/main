@@ -45,8 +45,6 @@ public class SignUpActivity extends AppCompatActivity {
                 } else{
 
                     //TODO Highlight parts of form that aren't working and or user already exist
-                    //LG NOTE: This can be done in the body of the helper functions
-                    //         (it will make this section more readable)
 
                 }
             }
