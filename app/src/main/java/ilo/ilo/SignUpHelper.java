@@ -126,4 +126,28 @@ public class SignUpHelper {
         return false;
     }
 
+    public String getFirstName(){
+        return  mFirstName;
+    }
+
+    public String getLastName(){
+        return  mLastName;
+    }
+
+    public String getEmail(){
+        return  mEmail;
+    }
+
+    public String getDob(){
+        return mDob;
+    }
+
+    public String getPassword(){
+        return mPassword;
+    }
+
+    public String getPasswordConfirm(){
+        return mPasswordConfirm;
+    }
+
 }

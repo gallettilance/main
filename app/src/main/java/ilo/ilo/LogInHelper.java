@@ -4,13 +4,13 @@ package ilo.ilo;
 import java.util.concurrent.ExecutionException;
 
 public class LogInHelper {
-    private String mUsername;
+    private String mEmail;
     private String mPassword;
     private boolean mAuthenticated;
     private String result;
 
-    public LogInHelper(String user, String password){
-        this.mUsername = user;
+    public LogInHelper(String email, String password){
+        this.mEmail = email;
         this.mPassword = password;
         try {
             result = new HttpGETRequest().execute("").get();
@@ -21,11 +21,13 @@ public class LogInHelper {
         }
     }
 
+    //TODO - Fix pattern
+
     public boolean isValidUser(){
 
         String pattern = "\"^[A-Z0-9._%+-]$\"";
 
-        return mUsername.matches(pattern);
+        return mEmail.matches(pattern);
     }
 
     public boolean isValidPassword(){
@@ -44,5 +46,13 @@ public class LogInHelper {
         //TODO: API to get password and compare
 
         return mAuthenticated && isValidPassword() && isValidUser();
+    }
+
+    public String getEmail (){
+        return mEmail;
+    }
+
+    public String getPassword (){
+        return  mPassword;
     }
 }
