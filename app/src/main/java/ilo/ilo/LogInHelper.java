@@ -1,34 +1,33 @@
 package ilo.ilo;
 
 
+import java.util.concurrent.ExecutionException;
 
 public class LogInHelper {
-    private String mUsername;
+    private String mEmail;
     private String mPassword;
     private boolean mAuthenticated;
+    private String result;
 
-    public LogInHelper(String user, String password){
-        this.mUsername = user;
+    public LogInHelper(String email, String password){
+        this.mEmail = email;
         this.mPassword = password;
+        try {
+            result = new HttpGETRequest().execute("").get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
     }
 
+    //TODO - Fix pattern
+
     public boolean isValidUser(){
-        // Check if user input is a valid email
-        // Source:
-        // https://stackoverflow.com/questions/8204680/java-regex-email
 
-        String pattern = "\"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,6}$\"";
-        boolean validUser = mUsername.matches(pattern);
+        String pattern = "\"^[A-Z0-9._%+-]$\"";
 
-        // Check if email in DB
-
-        boolean inDatabase = false;
-
-        if(validUser){
-            //TODO - call to make sure it is in database
-            return inDatabase;
-        }
-        return false;
+        return mEmail.matches(pattern);
     }
 
     public boolean isValidPassword(){
@@ -39,10 +38,21 @@ public class LogInHelper {
                 Check to make sure hashed version of the
                 password matches the value stored in DB
         */
-        return false;
+
+        return mPassword.length() > 8 && mPassword.length() < 40;
     }
 
-    public void authenticate(){
+    public boolean isAuthenticated(){
+        //TODO: API to get password and compare
 
+        return mAuthenticated && isValidPassword() && isValidUser();
+    }
+
+    public String getEmail (){
+        return mEmail;
+    }
+
+    public String getPassword (){
+        return  mPassword;
     }
 }

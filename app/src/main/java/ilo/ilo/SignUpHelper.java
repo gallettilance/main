@@ -6,6 +6,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.ExecutionException;
 
 public class SignUpHelper {
 
@@ -91,7 +92,7 @@ public class SignUpHelper {
         // TODO: figure out an efficient ordering of these checks
         // TODO: see if can execute checks in parallel
         return isValidFirstName() && isValidLastName() && isValidEmail()
-                && isValidPassword() && isValidUserName() && isValidDob()
+                && isValidPassword() && isValidUserName()
                 && isConfirmed();
     }
 
@@ -103,6 +104,50 @@ public class SignUpHelper {
         //TODO Learn more about hashing
         String hashedPass = ""+mPassword.hashCode();
         return hashedPass;
+    }
+
+    public boolean register(){
+        if(true){
+            try {
+                new HttpPOSTRequest().execute("https://gai-database.herokuapp.com/users/", mFirstName, mLastName, mEmail, mPassword, mDob).get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+            return true;
+        }
+
+        return false;
+    }
+
+    public boolean userExists(){
+        //TODO: Using GET request to see if a certain email address returns a valid query
+        return false;
+    }
+
+    public String getFirstName(){
+        return  mFirstName;
+    }
+
+    public String getLastName(){
+        return  mLastName;
+    }
+
+    public String getEmail(){
+        return  mEmail;
+    }
+
+    public String getDob(){
+        return mDob;
+    }
+
+    public String getPassword(){
+        return mPassword;
+    }
+
+    public String getPasswordConfirm(){
+        return mPasswordConfirm;
     }
 
 }
