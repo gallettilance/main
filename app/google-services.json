@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "133706430315",
+    "firebase_url": "https://main-5a119.firebaseio.com",
+    "project_id": "main-5a119",
+    "storage_bucket": "main-5a119.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133706430315:android:bba9b53a5e2a187a",
+        "android_client_info": {
+          "package_name": "ilo.ilo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133706430315-9gb1qdmkl3so2237k71j7a8v8pag1uip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ilo.ilo",
+            "certificate_hash": "2ec9141bca03786ccc9b84fa8db9d949c929b9a0"
+          }
+        },
+        {
+          "client_id": "133706430315-n516j1vgjjiko73c6dkdk1fc2sag8ebk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjX04Fje0JQ_wj-6HFp5-VG1flisrSvrc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133706430315-n516j1vgjjiko73c6dkdk1fc2sag8ebk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
