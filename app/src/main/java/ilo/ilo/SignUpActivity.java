@@ -47,7 +47,7 @@ public class SignUpActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Intent i = new Intent(SignUpActivity.this, ViewProfileActivity.class);
+                            Intent i = new Intent(SignUpActivity.this, ViewProfileActivity.class).putExtra("Name", mFirstName.getText() + " " + mLastName.getText());
                             startActivity(i);
                         }
                     }
