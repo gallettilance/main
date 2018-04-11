@@ -30,6 +30,15 @@ public class ViewProfileActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button_explore_progress).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent editProfileIntent = new Intent(ViewProfileActivity.this, ViewModulesActivity.class);
+                startActivity(editProfileIntent);
+                //              }
+            }
+        });
 
 
     }

@@ -19,6 +19,7 @@
         <activity android:name=".LogInActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ViewProfileActivity" />
+        <activity android:name=".EditProfileActivity" />
         <activity android:name=".ViewTasks" />
         <activity android:name=".TaskActivity" />
         <activity android:name=".BrowseActivity" />
