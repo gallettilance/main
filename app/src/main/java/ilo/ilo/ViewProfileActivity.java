@@ -49,6 +49,15 @@ public class ViewProfileActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button_leader_board).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent editProfileIntent = new Intent(ViewProfileActivity.this, LeaderBoardActivity.class);
+                startActivity(editProfileIntent);
+                //              }
+            }
+        });
 
     }
 }
